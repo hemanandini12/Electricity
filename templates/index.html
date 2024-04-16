@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask Webpage</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <style>
+        /* Additional CSS for responsiveness */
+        @media only screen and (max-width: 600px) {
+            .container {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Indian agriculture crop production analysis</h1>
+        <div class="image-container">
+            <img src="{{ url_for('static', filename='image.png') }}" alt="Huge PNG Image">
+            <p><a href="https://public.tableau.com/app/profile/venkata.karthik.v/viz/EnergyDashboard_17131540979810/Dashboard1" target="_blank">Visualization Link</a></p>
+        </div>
+    </div>
+
+    <!-- Optional: JavaScript code for additional functionality -->
+    <script>
+        // You can add JavaScript code here if needed
+    </script>
+</body>
+</html>
